@@ -1,4 +1,4 @@
-# Juan Milheiro
+# Hi, I'm Juan 👋
 
 AI Engineer in Rio de Janeiro. I build LLM systems for lawyers and keep them running.
 
