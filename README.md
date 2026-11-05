@@ -14,20 +14,20 @@ Narrated videos with the real interfaces running on fictional data. Click a GIF 
 
 <table>
   <tr>
-    <td width="50%"><b>Portal GX · system tour</b><br><sub>LLM triage of court publications, in production since 2025</sub></td>
+    <td width="50%"><b>Portal GX · system tour</b><br><sub>LLM triage of court publications, in production since 2025 · <a href="https://github.com/jmilheiro73/legal-ops-ai">case study</a></sub></td>
     <td width="50%"><b>Portal GX · how it works</b><br><sub>The model interprets, code decides, a human clicks last</sub></td>
   </tr>
   <tr>
-    <td><a href="https://juan-milheiro.vercel.app/#gx"><img src="./assets/gx-tour-en.gif" alt="Portal GX system tour"></a></td>
-    <td><a href="https://juan-milheiro.vercel.app/#gx"><img src="./assets/gx-motion-en.gif" alt="How the Portal GX triage works"></a></td>
+    <td><a href="https://github.com/jmilheiro73/legal-ops-ai"><img src="./assets/gx-tour-en.gif" alt="Portal GX system tour"></a></td>
+    <td><a href="https://github.com/jmilheiro73/legal-ops-ai"><img src="./assets/gx-motion-en.gif" alt="How the Portal GX triage works"></a></td>
   </tr>
   <tr>
     <td><b>On-premise legal RAG</b><br><sub>Retrieval and answers measured separately · <a href="https://github.com/jmilheiro73/legal-rag-eval">eval method</a></sub></td>
-    <td><b>Baqui</b><br><sub>B2B produce marketplace, Row Level Security, real time · <a href="https://baqui.vercel.app">live</a></sub></td>
+    <td><b>Baqui</b><br><sub>B2B produce marketplace, Row Level Security, real time · <a href="https://github.com/jmilheiro73/baqui-case-study">case study</a> · <a href="https://baqui.vercel.app">live</a></sub></td>
   </tr>
   <tr>
-    <td><a href="https://juan-milheiro.vercel.app/#local-ai"><img src="./assets/rag-en.gif" alt="On-premise legal RAG"></a></td>
-    <td><a href="https://juan-milheiro.vercel.app/#work"><img src="./assets/baqui-en.gif" alt="Baqui product tour"></a></td>
+    <td><a href="https://github.com/jmilheiro73/legal-rag-eval"><img src="./assets/rag-en.gif" alt="On-premise legal RAG"></a></td>
+    <td><a href="https://github.com/jmilheiro73/baqui-case-study"><img src="./assets/baqui-en.gif" alt="Baqui product tour"></a></td>
   </tr>
 </table>
 
