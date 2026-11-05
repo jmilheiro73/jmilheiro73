@@ -3,7 +3,7 @@
 AI Engineer in Rio de Janeiro. I build LLM systems for lawyers and keep them running.
 
 - **In production:** I'm the sole engineer behind an AI-driven legal platform. An LLM reads the court gazette every morning and classifies each publication, and a human confirms it in one click. Every decision is logged. The LLM never calculates a deadline — that's deterministic code. → [case study](https://github.com/jmilheiro73/legal-ops-ai)
-- **Triage agent:** on top of that pipeline, an LLM agent with five read-only tools checks each publication against the case history and the open tasks, and returns a typed proposal: register, dismiss or send to a human. Nothing leaves the queue without a lead's approval, and every agent version is evaluated offline against human decisions, with a temporal cut so the answer can't leak.
+- **Triage agent:** on top of that pipeline, a Claude agent with five read-only tools checks each publication against the case history and the open tasks, and returns a typed proposal: register, dismiss or send to a human. Nothing leaves the queue without a lead's approval, and every agent version is evaluated offline against human decisions, with a temporal cut so the answer can't leak.
 - **Building now:** an on-premise legal RAG for the same firm. My own FastAPI + LangGraph backend, Qdrant, an 8B open model on llama.cpp and Langfuse traces, scored against a 76-question answer key after every change.
 - **In the open:** [legal-rag-eval](https://github.com/jmilheiro73/legal-rag-eval), the evaluation method behind that RAG: retrieval scored apart from generation and rule-based answer checks, on public Brazilian statutes. And [prax-chatbot](https://github.com/jmilheiro73/prax-chatbot), a LangGraph agent served by FastAPI over SSE. It has two-layer memory (Redis checkpoint with TTL + a SQLite summary) and every run is traced in LangSmith.
 - **Next:** a RAG on pgvector with Recall@K measured, then an agent with evals on top of it.
@@ -45,7 +45,7 @@ Narrated videos with the real interfaces running on fictional data. Click a GIF 
 
 ### Stack
 
-Python · FastAPI · LangGraph / LangChain · LLM APIs · Qdrant · Redis · PostgreSQL / Supabase · TypeScript · React / React Native · Playwright · Vercel
+Python · FastAPI · LangGraph / LangChain · Claude API · Qdrant · Redis · PostgreSQL / Supabase · TypeScript · React / React Native · Playwright · Vercel
 
 Security is not a separate skill for me — RBAC, row-level isolation, mTLS and JWT show up in everything above.
 
