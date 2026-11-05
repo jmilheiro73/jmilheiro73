@@ -2,15 +2,34 @@
 
 AI Engineer in Rio de Janeiro. I build LLM systems for lawyers and keep them running.
 
-[![Tour of the LLM triage running in production (real UI, fictional data)](./assets/gx-tour.gif)](https://github.com/jmilheiro73/jmilheiro73/releases/tag/video-tour)
-
-▶ [Watch the full tour (1:24)](https://github.com/jmilheiro73/jmilheiro73/releases/tag/video-tour): the real interface, running on fictional data.
-
 - **In production:** I'm the sole engineer behind an AI-driven legal platform. An LLM reads the court gazette every morning and classifies each publication, and a human confirms it in one click. Every decision is logged. The LLM never calculates a deadline — that's deterministic code. → [case study](https://github.com/jmilheiro73/legal-ops-ai)
 - **Triage agent:** on top of that pipeline, a Claude agent with five read-only tools checks each publication against the case history and the open tasks, and returns a typed proposal: register, dismiss or send to a human. Nothing leaves the queue without a lead's approval, and every agent version is evaluated offline against human decisions, with a temporal cut so the answer can't leak.
 - **Building now:** an on-premise legal RAG for the same firm. My own FastAPI + LangGraph backend, Qdrant, an 8B open model on llama.cpp and Langfuse traces, scored against a 76-question answer key after every change.
 - **In the open:** [legal-rag-eval](https://github.com/jmilheiro73/legal-rag-eval), the evaluation method behind that RAG: retrieval scored apart from generation and rule-based answer checks, on public Brazilian statutes. And [prax-chatbot](https://github.com/jmilheiro73/prax-chatbot), a LangGraph agent served by FastAPI over SSE. It has two-layer memory (Redis checkpoint with TTL + a SQLite summary) and every run is traced in LangSmith.
 - **Next:** a RAG on pgvector with Recall@K measured, then an agent with evals on top of it.
+
+### See it running
+
+Narrated videos with the real interfaces running on fictional data. Click a GIF to watch the full video on my portfolio.
+
+<table>
+  <tr>
+    <td width="50%"><b>Portal GX · system tour</b><br><sub>LLM triage of court publications, in production since 2025</sub></td>
+    <td width="50%"><b>Portal GX · how it works</b><br><sub>The model interprets, code decides, a human clicks last</sub></td>
+  </tr>
+  <tr>
+    <td><a href="https://juan-milheiro.vercel.app/#gx"><img src="./assets/gx-tour-en.gif" alt="Portal GX system tour"></a></td>
+    <td><a href="https://juan-milheiro.vercel.app/#gx"><img src="./assets/gx-motion-en.gif" alt="How the Portal GX triage works"></a></td>
+  </tr>
+  <tr>
+    <td><b>On-premise legal RAG</b><br><sub>Retrieval and answers measured separately · <a href="https://github.com/jmilheiro73/legal-rag-eval">eval method</a></sub></td>
+    <td><b>Baqui</b><br><sub>B2B produce marketplace, Row Level Security, real time · <a href="https://baqui.vercel.app">live</a></sub></td>
+  </tr>
+  <tr>
+    <td><a href="https://juan-milheiro.vercel.app/#local-ai"><img src="./assets/rag-en.gif" alt="On-premise legal RAG"></a></td>
+    <td><a href="https://juan-milheiro.vercel.app/#work"><img src="./assets/baqui-en.gif" alt="Baqui product tour"></a></td>
+  </tr>
+</table>
 
 ### Things I've shipped
 
